@@ -16,12 +16,12 @@ export default function BookList() {
   const [books, setBooks] = useState<Libro[]>([]);
 
   const fetchBooks = async () => {
-    const res = await axios.get("http://dabral-alejandro-escobar-ms-projects.vercel.app/books/getBooks");
+    const res = await axios.get("https://dabral-alejandro-escobar-ms-projects.vercel.app/books/getBooks");
     setBooks(res.data);
   };
 
   const deleteBook = async (id: number) => {
-    await axios.delete(`http://dabral-alejandro-escobar-ms-projects.vercel.app/books/deleteBook/${id}`);
+    await axios.delete(`https://dabral-alejandro-escobar-ms-projects.vercel.app/books/deleteBook/${id}`);
     fetchBooks();
   };
 

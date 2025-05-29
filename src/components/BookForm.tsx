@@ -21,7 +21,7 @@ export default function BookForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    await axios.post("http://dabral-alejandro-escobar-ms-projects.vercel.app/books/createBook", form);
+    await axios.post("https://dabral-alejandro-escobar-ms-projects.vercel.app/books/createBook", form);
     setForm(defaultForm);
   };
 
